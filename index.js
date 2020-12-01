@@ -27,6 +27,11 @@ var qData =[{
   question:"\nWhat movie series I like?\n",
   options: ["Harry Potter","Fantastic Beasts","Despicable me"],
   answer:"Harry Potter"
+},
+{
+    question: "\nWhat is my middle name?",
+    options: ["Pratap","Kumar","None"],
+    answer:"None"
 }]
 
 
