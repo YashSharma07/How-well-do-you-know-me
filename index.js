@@ -1,5 +1,5 @@
 var readInput = require("readline-sync");
-
+var chalk = require("chalk");
 
 
 //Quiz data
@@ -61,13 +61,13 @@ var highScore=[{
 function quizMe(question, options, answer){
   var userAnswer = readInput.keyInSelect(options,question);
   if (options[userAnswer]===answer){
-    console.log("Correct Answer");
+    console.log(chalk.bold("Correct Answer"));
     score=score+10;
   }
   else{
-    console.log("Wrong Answer");
+    console.log(chalk.bold("Wrong Answer"));
   }
-  console.log("Your Score is "+score+"!")
+  console.log("Your Score is "+score+"!");
 }
 
 
